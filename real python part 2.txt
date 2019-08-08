@@ -1,0 +1,131 @@
+
+Real Python Part 2
+
+started reading 6.8.2019
+
+
+6.8.2019 read until page 28 1.2.7 Version Control: Setting up Git
+
+
+10 1.1 Introduction
+16 1.2 Getting Started
+33 1.3 Interlude: Modern Web Development
+37 1.4 Flask: Quick Start
+50 1.5 Interlude: Database Programming
+77 1.6 Flask Blog App
+105 1.7 Interlude: Debugging in Python
+115 1.8 Flask: FlaskTaskr, Part 1 - Quick Start
+136 1.9 Flask: FlaskTaskr, Part 2 - SQLAlchemy and User Management
+164 1.10 Flask: FlaskTaskr, Part 3 - Error Handling and Testing
+186 1.11 Interlude: Intro to HTML and CSS
+
+VIDEOS
+page 12
+
+COURSE REPOSITORY
+github.com/realpython/book2-exercises
+
+SUPPORT
+github.com/realpython/support
+
+CMD COMMANDS
+
+cd - navigating to folders
+cd .. - going back one folder
+dir - listing folder contents
+cls - clear the screen
+del - delete a file
+md - create new folder
+rd - remove a folder
+echo file_content > file_name - create new file
+
+
+ISNTALLING SQLITE
+
+VIRTUAL ENVIRONMENT
+
+# create a new directory "venv" and set up a virtual environment within that directory
+python -m venv env
+
+# activate the virtual environment:
+env\scripts\activate
+
+# deactivate the virtual environment
+deactivate
+
+Every time you create a new project, install a new virtual environment.
+
+CHROME
+
+press ctrl + shift + I to activate developer tools
+
+VERSION CONTROL
+
+We will be using Git for version control and Github for remotely hosting our code.
+
+SETTING UP Git
+
+git-scm.com/downloads/
+
+read chapter 2 and 3 of the Git Book:
+git-scm.com/book/
+
+Add the repo on Github. Run the following commands in your local directory:
+$ git init
+$ touch README.md # creates a file
+$ git add -A # takes a snapshot of the project in its current state
+$ git commit -m "some message" # adds the project to your repo
+$ git remote add origin https:// # adds the project to GitHub
+$ git push origin master # PUSHes the local repo to Github
+
+
+Next, after your repo has been created locally and remotely - and you completed your
+first PUSH - you can follow this similar workflow to PUSH as needed:
+$ git add -A # takes a snapshot of the project in its current state
+$ git commit -am 'message'
+$ git push origin master
+
+
+Next add a .gitignore file (no file extension!), which is a file that you can use to specify
+files you wish to ignore or keep out of your repository, both local and remote. What files
+should you keep out? If it's clutter (such as a .pyc file) or a secret (such as an API key),
+then keep it out of your public repo on Github.
+Please read more about .gitignore here. For now, add the files found here.
+git-scm.com/docs/gitignore
+github.com/github/gitignore/blob/master/Python.gitignore
+
+set up RSA key for use with Github so you don't have to enter password each time you push code to Github
+https://help.github.com/en/articles/connecting-to-github-with-ssh
+
+
+YOUR SETUP
+# Finally, we want to set up a requirements.txt file for each virtual environment. This file contains a list of packages you've installed via pip. This is meant to be used by other developers to recreate the same development environment. To do this, run the following command when your virtual environment is activated:
+$ pip freeze > requirements.txt
+
+read more about the basic Git commands at
+gitref.org/basic/
+
+
+INTERLUDE: MODERN WEB DEVELOPMENT page 33
+MODEL VIEW CONTROLLER MVC page 354
+Read about the differences between a website (static) and a web application (dynamic) here.
+eepurl.com/xnT3b
+
+Want to learn more about MVC? Read Model-View-Controller (MVC) Explained -- With Legos
+realpython.com/blog/python/the-model-view-controller-mvc-paradigm-summarized-with-legos/
+
+
+FLASK
+
+Save the file as app.py and run it:
+$ python app.py
+open http://127.0.0.1:5000/ in browser to see the webpage
+
+
+
+
+
+
+
+
+
