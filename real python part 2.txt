@@ -5,6 +5,7 @@ started reading 6.8.2019
 
 
 6.8.2019 read until page 28 1.2.7 Version Control: Setting up Git
+8.8.2019 read until page 43 1.4.4 App Flow
 
 
 10 1.1 Introduction
@@ -115,12 +116,14 @@ Want to learn more about MVC? Read Model-View-Controller (MVC) Explained -- With
 realpython.com/blog/python/the-model-view-controller-mvc-paradigm-summarized-with-legos/
 
 
-FLASK
+1.4 FLASK: QUICK START
 
 Save the file as app.py and run it:
 $ python app.py
 open http://127.0.0.1:5000/ in browser to see the webpage
 
+http://127.0.0.1:5000/
+http://localhost:5000
 
 
 
