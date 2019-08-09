@@ -6,6 +6,7 @@ started reading 6.8.2019
 
 6.8.2019 read until page 28 1.2.7 Version Control: Setting up Git
 8.8.2019 read until page 43 1.4.4 App Flow
+9.8.2019 read until page 50 1.5 Interlude: Database Programming
 
 
 10 1.1 Introduction
