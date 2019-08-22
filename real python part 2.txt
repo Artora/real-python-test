@@ -139,6 +139,26 @@ DELETE - deletes data from the database
 
 
 
+##########################
+WHEN STARTING AGAIN AFTER STARTING PC, DO THE FOLLOWING:
+
+# 1. OPEN GIT BASH
+
+# 2. NAVIGATE TO FOLDER
+$ cd /D/Sync/python/real-python-test/
+
+# 3. ACTIVATE VIRTUAL ENVIRONMENT
+$ source env/Scripts/activate
+
+# 4. MERGING UPDATES FROM GitHub TO OWN PC
+$ git pull origin master
+
+# 5. UPDATING GitHub
+$ git add -A # takes a snapshot of the project in its current state
+$ git commit -am 'message'
+$ git push origin master
+
+##########################
 
 
 
