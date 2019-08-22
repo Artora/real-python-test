@@ -51,6 +51,7 @@ python -m venv env
 
 # activate the virtual environment:
 env\scripts\activate
+source env/Scripts/activate
 
 # deactivate the virtual environment
 deactivate
@@ -127,6 +128,14 @@ http://127.0.0.1:5000/
 http://localhost:5000
 
 
+1.5 INTERLUDE: DATABASE PROGRAMMING
+SQL AND SQLite BASICS
+
+The 4 basic SQL commands:
+SELECT - retrieves data from the database
+INSERT - inserts data from the database
+UPDATE - updates data from the database
+DELETE - deletes data from the database
 
 
 
