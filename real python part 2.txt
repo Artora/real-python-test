@@ -9,7 +9,7 @@ started reading 6.8.2019
 8.8.2019 read until page 43 1.4.4 App Flow
 9.8.2019 read until page 50 1.5 Interlude: Database Programming
 24.8.2019 read until page 62 Updating and Deleting
-25.8.2019 read until page 66 SQL Joins
+25.8.2019 read until page 68 SQL Functions
 
 
 10 1.1 Introduction
