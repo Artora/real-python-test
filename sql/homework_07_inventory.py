@@ -1,27 +1,30 @@
 """
 Count the total number of orders for each model
 
-
 PRINT
 model
 quantity
 order count
-
 """
 
-def order_count(model_name):
-    count = ("SELECT count(order_date) FROM orders \
-        WHERE model=model_name")
-    print(count)
+def get_quantity():
+    """gets the quantity of cars and prints it"""
+    c.execute("""SELECT quantity FROM inventory 
+            WHERE model=?""", (m[1],))
+    quantity = c.fetchall()
+    print('Quantity:', quantity[0][0])
+
+def get_order_count():
+    """gets the order count and prints it"""
+    c.execute("SELECT count(order_date) FROM orders \
+            WHERE model=?", (m[1],))
+    count = c.fetchall()
+    print('Order count:', count[0][0], '\n')
 
 import sqlite3
 
 with sqlite3.connect("cars.db") as connection:
     c = connection.cursor()
-
-    c.execute("SELECT count(order_date) FROM orders \
-            WHERE model='Mustang'")
-    print(c.fetchall())
 
     c.execute("""SELECT DISTINCT make, model FROM orders""")
     models = c.fetchall()
@@ -29,15 +32,8 @@ with sqlite3.connect("cars.db") as connection:
     all = c.execute("SELECT * FROM orders")
 
     rows = c.fetchall()
-    print('test')
-    print(models)
-    print(type(models))
+    
     for m in models:
-        print(m[0], m[1])
-        lel = m[1]
-        print(type(lel))
-        print(lel + 'yodli')
-        mus = ('Mustang')
-        c.execute("SELECT count(order_date) FROM orders WHERE model=?", (mus,))
-        count = c.fetchall()
-        print(count)
+        print('Model:', m[0], m[1])
+        get_quantity()
+        get_order_count()
