@@ -10,7 +10,8 @@ started reading 6.8.2019
 9.8.2019 read until page 50 1.5 Interlude: Database Programming
 24.8.2019 read until page 62 Updating and Deleting
 25.8.2019 read until page 68 SQL Functions
-
+28.8.2019 read until page 77 1.6 Flask Blog App
+28.8.2019 read until page 83 Views
 
 10 1.1 Introduction
 16 1.2 Getting Started
@@ -163,7 +164,29 @@ $ git push origin master
 
 ##########################
 
+SQL Summary
 
+Basic SQL syntax...
+
+Insert
+
+INSERT INTO table_name (column1, column2, column3)
+VALUES (value1, value2, value3);
+
+Update
+
+UPDATE table_name
+SET column1=value1
+WHERE some_column=some_value;
+
+Delete
+
+DELETE FROM table_name
+WHERE some_column=some_value;
+
+further SQL resources:
+http://zetcode.com/
+http://www.tutorialspoint.com/python/python_database_access.htm
 
 
 
