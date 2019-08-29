@@ -12,6 +12,7 @@ started reading 6.8.2019
 25.8.2019 read until page 68 SQL Functions
 28.8.2019 read until page 77 1.6 Flask Blog App
 28.8.2019 read until page 83 Views
+29.8.2019 read until page 87 Sanity Check
 
 10 1.1 Introduction
 16 1.2 Getting Started
@@ -189,4 +190,19 @@ http://zetcode.com/
 http://www.tutorialspoint.com/python/python_database_access.htm
 
 
+1.5 FLASK BLOG APP
 
+start server by running:
+python blog.py (chnage filename to what you want to run)
+then open page localhost:5000 in browser
+http://localhost:5000/
+
+
+WARNING: Make the value of your secret key really, really hard, if not impossible,
+to guess. Use a random key generator to do this. Never, ever use a value you pick
+on your own. Or you can use your OS to get a random string:
+>>> import os
+>>> os.urandom(24)
+'rM\xb1\xdc\x12o\xd6i\xff+9$T\x8e\xec\x00\x13\x82.*\x16TG\xbd'
+Now you can simply assign that string to the secret key: SECRET_KEY =
+rM\xb1\xdc\x12o\xd6i\xff+9$T\x8e\xec\x00\x13\x82.*\x16TG\xbd
