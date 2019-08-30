@@ -14,6 +14,7 @@ started reading 6.8.2019
 28.8.2019 read until page 83 Views
 29.8.2019 read until page 88 User Login
 30.8.2019 read until page 93 Sessions
+30.8.2019 read until page 95 "When a GET request is sent...."
 
 10 1.1 Introduction
 16 1.2 Getting Started
