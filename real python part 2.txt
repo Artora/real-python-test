@@ -12,7 +12,8 @@ started reading 6.8.2019
 25.8.2019 read until page 68 SQL Functions
 28.8.2019 read until page 77 1.6 Flask Blog App
 28.8.2019 read until page 83 Views
-29.8.2019 read until page 87 Sanity Check
+29.8.2019 read until page 88 User Login
+30.8.2019 read until page 93 Sessions
 
 10 1.1 Introduction
 16 1.2 Getting Started
