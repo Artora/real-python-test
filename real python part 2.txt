@@ -15,6 +15,9 @@ started reading 6.8.2019
 29.8.2019 read until page 88 User Login
 30.8.2019 read until page 93 Sessions
 30.8.2019 read until page 95 "When a GET request is sent...."
+2.9.2019 read until page 98 Show Posts
+
+
 
 10 1.1 Introduction
 16 1.2 Getting Started
@@ -153,6 +156,9 @@ WHEN STARTING AGAIN AFTER STARTING PC, DO THE FOLLOWING:
 
 # 2. NAVIGATE TO FOLDER
 $ cd /D/Sync/python/real-python-test/
+
+$ cd Desktop/omat\ tiedostot/python/real\ python/book\ 2/real-python-test/
+
 
 # 3. ACTIVATE VIRTUAL ENVIRONMENT
 $ source env/Scripts/activate
