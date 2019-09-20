@@ -16,6 +16,8 @@ started reading 6.8.2019
 30.8.2019 read until page 93 Sessions
 30.8.2019 read until page 95 "When a GET request is sent...."
 2.9.2019 read until page 98 Show Posts
+20.9.2019 read until page 105 1.7 Interlude: Debugging in Python
+
 
 
 
@@ -214,3 +216,20 @@ on your own. Or you can use your OS to get a random string:
 'rM\xb1\xdc\x12o\xd6i\xff+9$T\x8e\xec\x00\x13\x82.*\x16TG\xbd'
 Now you can simply assign that string to the secret key: SECRET_KEY =
 rM\xb1\xdc\x12o\xd6i\xff+9$T\x8e\xec\x00\x13\x82.*\x16TG\xbd
+
+
+1.7 Interlude: Debugging in Python
+
+pdb module
+
+From here you step through your code to see what happens, line by line. You have access to a number of commands, which can be daunting at first, but on a day-to-day basis you'll only use a few of them:
+	n : step forward one line
+	p <variable name> : prints the current value of the provided variable
+	l : displays the entire program along with where the current break point is
+	q : exits the debugger and the program
+	c : exits the debugger and the program continues to run
+	b <line #> : adds a breakpoint at a specific line #
+NOTE If you don't remember the list of commands you can always type ? or help to see the entire list.
+
+
+PAGE 110
