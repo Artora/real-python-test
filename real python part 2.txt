@@ -18,7 +18,7 @@ started reading 6.8.2019
 2.9.2019 read until page 98 Show Posts
 20.9.2019 read until page 105 1.7 Interlude: Debugging in Python
 21.9.2019 read until page 115 1.8 Flask: FlaskTaskr, Part 1 - Quick Start
-
+22.9.2019 read until page 122 Templates and Styles
 
 
 10 1.1 Introduction
