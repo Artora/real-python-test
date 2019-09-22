@@ -17,7 +17,7 @@ started reading 6.8.2019
 30.8.2019 read until page 95 "When a GET request is sent...."
 2.9.2019 read until page 98 Show Posts
 20.9.2019 read until page 105 1.7 Interlude: Debugging in Python
-
+21.9.2019 read until page 115 1.8 Flask: FlaskTaskr, Part 1 - Quick Start
 
 
 
@@ -175,6 +175,9 @@ $ git push origin master
 
 ##########################
 
+# To change the drive in Windows cmd
+cd /d D:\Sync\python\real-python-test\debugging
+
 SQL Summary
 
 Basic SQL syntax...
@@ -232,4 +235,4 @@ From here you step through your code to see what happens, line by line. You have
 NOTE If you don't remember the list of commands you can always type ? or help to see the entire list.
 
 
-PAGE 110
+
