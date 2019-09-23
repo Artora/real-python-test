@@ -22,7 +22,7 @@ def login_required(test):
             return test(*args, **kwargs)
         else:
             flash('You need to login first.')
-            return redirect(url_for('lon'))
+            return redirect(url_for('login'))
     return wrap
 
 # route handlers 
@@ -43,5 +43,5 @@ def login():
             session['logged_in'] = True
             flash('Welcome!')
             return redirect(url_for('tasks'))
-        return render_template('login.html')
+    return render_template('login.html')
 

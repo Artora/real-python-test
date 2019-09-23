@@ -70,6 +70,18 @@ deactivate
 
 Every time you create a new project, install a new virtual environment.
 
+# install python packages and get packages and version info into a text file
+$ pip install flask==0.11.1
+$ pip freeze > requirements.txt
+
+Make sure to add a .gitignore file to the "flasktaskr" directory:
+env
+venv
+*.pyc
+__pycache__
+*.DS_Store
+project/_config.py
+
 CHROME
 
 press ctrl + shift + I to activate developer tools
