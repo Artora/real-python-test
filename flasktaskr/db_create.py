@@ -9,10 +9,9 @@ with sqlite3.connect(DATABASE_PATH) as connection:
     c = connection.cursor()
 
     # create the table
-    c.execute("""CREATE TABLE tasks(
-        task_id INTEGER PRIMARY KEY AUTOINCREMENT, 
-        name TEXT NOT NULL, due_date TEXT NOT NULL, 
-        priority INTEGER NOT NULL, status INTEGER NOT NULL)""")
+    c.execute("""CREATE TABLE tasks(task_id INTEGER PRIMARY KEY AUTOINCREMENT, 
+        name TEXT NOT NULL, due_date TEXT NOT NULL, priority INTEGER NOT NULL, 
+        status INTEGER NOT NULL)""")
 
     # insert dummy data into the table
     c.execute(
