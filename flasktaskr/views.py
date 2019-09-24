@@ -7,6 +7,7 @@ from functools import wraps
 from flask import Flask, flash, redirect, render_template, \
 request, session, url_for, g
 
+from forms import AddTaskForm
 
 # config
 
@@ -62,8 +63,8 @@ def tasks():
     ]
     cursor = g.db.execute(
         'select name, due_date, priority, task_id from tasks where status=0'
-        )
-        closed_tasks = [
+    )
+    closed_tasks = [
         dict(name=row[0], due_date=row[1], priority=row[2],
             task_id=row[3]) for row in cursor.fetchall()
     ]
@@ -98,7 +99,7 @@ def new_task():
         d.db.commit()
         d.db.close()
         flash('New entry was successfully posted. Thanks')
-        flash redirect(url_for('tasks'))
+        return redirect(url_for('tasks'))
 
 
 # Mark tasks as complete
@@ -117,7 +118,7 @@ def complete(task_id):
 # Delete tasks
 @app.route('/delete/<int:task_id>/')
 @login_required
-def delete_entry(task_id:
+def delete_entry(task_id):
     g.db = connect_db()
     g.db.execute('delete from tasks where task_id='+str(task_id))
     g.db.commit()
