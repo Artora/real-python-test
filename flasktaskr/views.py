@@ -5,7 +5,7 @@ import sqlite3
 from functools import wraps
 
 from flask import Flask, flash, redirect, render_template, \
-request, session, url_for, g
+    request, session, url_for, g
 
 from forms import AddTaskForm
 
@@ -55,11 +55,11 @@ def login():
 def tasks():
     g.db = connect_db()
     cursor = g.db.execute(
-    'select name, due_date, priority, task_id from tasks where status=1'
+        'select name, due_date, priority, task_id from tasks where status=1'
     )
     open_tasks = [
-    dit(name=row[0], due_date=row[1], priority=row[2],
-        task_id=row[3]) for row in cursor.fetchall()
+        dit(name=row[0], due_date=row[1], priority=row[2],
+            task_id=row[3]) for row in cursor.fetchall()
     ]
     cursor = g.db.execute(
         'select name, due_date, priority, task_id from tasks where status=0'
@@ -88,16 +88,16 @@ def new_task():
         flash("All fields are required. Please try again.")
         return redirect(url_for('tasks'))
     else:
-        d.db.execute('insert into tasks (\
+        g.db.execute('insert into tasks (\
             name, due_date, priority, status) \
             values (?, ?, ?, 1)', [
-            request.form['name'],
-            request.form['due_date'],
-            request.form['priority']
+                request.form['name'],
+                request.form['due_date'],
+                request.form['priority']
             ]
         )
-        d.db.commit()
-        d.db.close()
+        g.db.commit()
+        g.db.close()
         flash('New entry was successfully posted. Thanks')
         return redirect(url_for('tasks'))
 
@@ -112,7 +112,7 @@ def complete(task_id):
     )
     g.db.commit()
     g.db.close()
-    flash('The task was marked as compelte.')
+    flash('The task was marked as complete.')
     return redirect(url_for('tasks'))
 
 # Delete tasks
