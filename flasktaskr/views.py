@@ -19,6 +19,7 @@ app.config.from_object('_config')
 
 def connect_db():
     return sqlite3.connect(app.config['DATABASE_PATH'])
+
 def login_required(test):
     @wraps(test)
     def wrap(*args, **kwargs):
@@ -27,7 +28,7 @@ def login_required(test):
         else:
             flash('You need to login first.')
             return redirect(url_for('login'))
-        return wrap
+    return wrap
 
 # route handlers
 
@@ -58,7 +59,7 @@ def tasks():
         'select name, due_date, priority, task_id from tasks where status=1'
     )
     open_tasks = [
-        dit(name=row[0], due_date=row[1], priority=row[2],
+        dict(name=row[0], due_date=row[1], priority=row[2],
             task_id=row[3]) for row in cursor.fetchall()
     ]
     cursor = g.db.execute(
