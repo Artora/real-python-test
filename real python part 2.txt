@@ -22,8 +22,9 @@ started reading 6.8.2019
 23.9.2019 read until page 126 Tasks
 24.9.2019 read until page 133 Sanity Check
 26.9.2019 read until page 136 1.9 Flask: FlaskTaskr, Part 2 - SQLAlchemy and User Management
-27.9.2019 read until 139 Database Management
-28.9.2019 read until 147 User Registration
+27.9.2019 read until page 139 Database Management
+28.9.2019 read until page 147 User Registration
+29.9.2019 read until page 152 Authentication
 
 
 10 1.1 Introduction
