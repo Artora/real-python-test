@@ -38,6 +38,17 @@ started reading 6.8.2019
 136 1.9 Flask: FlaskTaskr, Part 2 - SQLAlchemy and User Management
 164 1.10 Flask: FlaskTaskr, Part 3 - Error Handling and Testing
 186 1.11 Interlude: Intro to HTML and CSS
+195 1.12 Flask: FlaskTaskr, Part4 - Styles, Test Coverage, and Permissions
+216 1.13 Flask: FlaskTaskr, Part 5 - Blueprints
+230 1.14 Flask: FlaskTaskr, Part 6 - New features and Error Handling
+252 1.15 Flask:FlaskTaskr, Part 7 - Deployment
+262 1.16 Flask: FlaskTaskr, Part 8 - RESTful API
+273 1.17 Interlude: Flask Boilerplate Template and Workflow
+276 1.18 Flask: FlaskTaskr, Part 9: Continuous Integration and Delivery
+293 1.19 Flask: Behavior-Driven Development with Behave
+321 1.20 Interlude: Web Frameworks, Compared
+325 1.21 web2py: Quick Start
+
 
 VIDEOS
 page 12
