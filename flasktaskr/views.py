@@ -42,9 +42,12 @@ def logout():
     flash('Goodbye!')
     return redirect(url_for('login'))
 
+
+
 @app.route('/', methods=['GET', 'POST'])
 def login():
     error = None
+    """
     if request.method == 'POST':
         if request.form['username'] != app.config['USERNAME'] \
                 or request.form['password'] != app.config['PASSWORD']:
@@ -55,6 +58,28 @@ def login():
             flash('Welcome!')
             return redirect(url_for('tasks'))
     return render_template('login.html')
+    """
+
+    form = LoginForm(request.form)
+    if request.method == 'POST':
+        if form.validate_on_submit():
+            user = User.query.filter_by(\
+                name = request.form['name']).first()
+            if user is not None and \
+                    user.password == request.form['password']:
+                session['logged_in'] = True
+                flash('Welcome')
+                return redirect(url_for('tasks'))
+            else:
+                error = 'Invalid username or password.'
+        else:
+            error = 'Both fields are required.'
+    return render_template('login.html', form = form, error = error)
+
+
+
+
+
 
 @app.route('/tasks/')
 @login_required
