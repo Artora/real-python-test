@@ -22,7 +22,7 @@ class Task(db.Model):
         self.priority = priority
         self.posted_date = posted_date
         self.status = status
-        self.user_id = user.id
+        self.user_id = user_id
 
     def __repr__(self):
         return '<name {0}>'.format(self.name)
