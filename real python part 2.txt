@@ -28,7 +28,7 @@ started reading 6.8.2019
 30.9.2019 read until page 157
 1.10.2019 read until page 159 Templates
 2.10.2019 read until page 164 Flask: FlaskTaskr, Part 3 - Error Handling
-2.10.2019 read until page 169 Database Related Errors
+2.10.2019 read until page 171 Testing
 
 
 10 1.1 Introduction
