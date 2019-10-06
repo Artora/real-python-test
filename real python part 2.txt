@@ -30,7 +30,8 @@ started reading 6.8.2019
 2.10.2019 read until page 164 Flask: FlaskTaskr, Part 3 - Error Handling
 2.10.2019 read until page 171 Testing
 3.10.2019 read until page 174 Assert
-5.10.2019 read until page 178 Current Functionality
+5.10.2019 read until page 178 Users
+6.10.2019 read until page 181 Users can access tasks
 
 
 10 1.1 Introduction
