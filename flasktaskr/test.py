@@ -49,7 +49,7 @@ class AllTests(unittest.TestCase):
     def test_form_is_present(self):
         response = self.app.get('/')
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b'Please sign in to access your task list', \
+        self.assertIn(b'Please login to access your task list', \
          response.data)
 
 
@@ -74,12 +74,12 @@ class AllTests(unittest.TestCase):
             data=dict(name=name, email=email, password=password, confirm=confirm), 
             follow_redirects=True
         )
-################### Error ###################
+
     def test_users_can_login(self):
         self.register('Michael', 'michael@realpython.com', 'python', 'python')
         response = self.login('Michael', 'python')
-        self.assertIn(b'Welcome!', response.data)
-################### Error ###################
+        self.assertIn(b'Welcome', response.data)
+
     def test_invalid_form_data(self):
         self.register('Michael', 'michael@realpython.com', 'python', 'python')
         response = self.login('alert("alert box!");', 'foo')
@@ -90,23 +90,23 @@ class AllTests(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn(b'Please register to access the task list.', \
             response.data)
-"""
 
-################### Error ###################
+
+
     def test_user_registration(self):
         self.app.get('register/', follow_redirects=True)
         response = self.register(
             'Michael', 'michael@google.com', 'python', 'python')
         self.assertIn(b'Thanks for registering. Please login.', \
             response.data)
-################### Error ###################
+
     def test_user_registration_error(self):
         self.app.get('register/', follow_redirects=True)
         self.register('Michael', 'michael@google.com', \
             'python', 'python')
         self.app.get('register/', follow_redirects=True)
-        response = self.register('Michael', 'Michael@google.com' \
-            'python', 'python')
+        response = self.register(
+            'Michael', 'Michael@google.com', 'python', 'python')
         self.assertIn(
             b'That username and/or email already exist.', 
             response.data
@@ -120,11 +120,11 @@ class AllTests(unittest.TestCase):
     def test_logged_in_users_can_logout(self):
         self.register('Fletcher', 'fletcher@google.com', '\
             python101', 'python101')
-################### Error ###################
+
     def test_not_logged_in_users_cannot_logout(self):
         response = self.logout()
         self.assertNotIn(b'Goodbye!', response.data)
-"""
+
 if __name__ == "__main__":
     unittest.main()
 

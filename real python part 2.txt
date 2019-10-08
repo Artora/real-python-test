@@ -56,6 +56,20 @@ started reading 6.8.2019
 321 1.20 Interlude: Web Frameworks, Compared
 325 1.21 web2py: Quick Start
 
+PYTHON 3.6 PATH
+C:\Users\artomatti.ratilainen\AppData\Local\Programs\Python\Python36
+
+$ pyenv virtualenv 3.6 <name-to-give-it>
+
+# install virtualenv to create virtual envs with specific python versions
+pip install virtualenv
+
+# create python virtual environment with specific python version
+virtualenv --python=/C/Users/USERNAME/AppData/Local/Programs/Python/Python36/python.exe env_python_3_6_0
+
+
+# install required packages
+pip install -r requirements.txt
 
 VIDEOS
 page 12
