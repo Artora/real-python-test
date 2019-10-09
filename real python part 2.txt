@@ -31,7 +31,8 @@ started reading 6.8.2019
 2.10.2019 read until page 171 Testing
 3.10.2019 read until page 174 Assert
 5.10.2019 read until page 178 Users
-6.10.2019 read until page 181 Users can access tasks
+6.10.2019 read until page 182 Users can access tasks
+9.10.2019 read until page 185 Interlude: Intro to HTML and CSS
 
 
 10 1.1 Introduction
@@ -209,7 +210,7 @@ WHEN STARTING AGAIN AFTER STARTING PC, DO THE FOLLOWING:
 # 2. NAVIGATE TO FOLDER
 $ cd /D/Sync/python/real-python-test/
 
-$ cd Desktop/omat\ tiedostot/python/real\ python/book\ 2/real-python-test/
+$ cd Desktop/omat\ tiedostot/python/real\ python/book\ 2/real-python-test/flasktaskr/
 
 
 # 3. ACTIVATE VIRTUAL ENVIRONMENT
