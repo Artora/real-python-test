@@ -33,6 +33,8 @@ started reading 6.8.2019
 5.10.2019 read until page 178 Users
 6.10.2019 read until page 182 Users can access tasks
 9.10.2019 read until page 185 Interlude: Intro to HTML and CSS
+9.10.2019 read until page 188 Elements, Tags, and Attributes
+10.10.2019 read until page 189 CSS
 
 
 10 1.1 Introduction
