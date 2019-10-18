@@ -7,8 +7,86 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
+
+
+    <style>
+
+        @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400italic,700italic,400,700|Fjall+One);
+
+        body {
+            font-size: 18px;
+            font-family: "Open Sans", Arial, sans+serif;
+            color: #292b33;
+        }
+
+        h1, h2 {
+            font+family: 'Fjalla One', 'Helvetica Neue', Arial, sans+serif;
+            font-size: 52px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1 px;
+            text-align: left;
+            margin: 1em 0 0 0;
+        }
+
+        p {
+            line-height: 1.5;
+            margin: 0 0 20px 0;
+        }
+
+        blockquote {
+            borderleft: none;
+            position: relative;
+        }
+
+        blockquote::before {
+            content: '"';
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 48px;
+            font-family: "inherit";
+            font-weight: bold;
+        }
+
+        blockquote p {
+            margin: 0 0 10px 20px;
+            font+style: italic;
+            font-family "Georgia";
+        }
+
+        em {
+            font-family: Georgia, serif;
+            font-size: 1.1em;
+        }
+
+        .lead {
+            margin-top: 0.25em;
+        }
+
+        .bg-white-dark {
+            border-top: 1px solid #cccbd6;
+            border-bottom: 1px solid #cccbd6;
+            background-color: #e7e6f3; /* Older Browsers */
+            background-color: rgba(231, 230, 243, 0.9);
+        }
+
+        .container {
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
+
+        ul {
+            list-style-type: circle;
+        }
+
+
+    </style>
+
+
 </head>
 <body>
+
 
     <header class="container">
         <div class="row">
@@ -33,7 +111,7 @@
                 </p>
                 <p>
                     <em><strong>Interested?<br />
-                    <a href="#packages">Go straight to the packages.</a></strong>></em>>
+                    <a href="#packages">Go straight to the packages.</a></strong></em>
                 </p>
             </div>
 
@@ -47,9 +125,161 @@
         <hr />
 
         <div class="row">
-            <figure class="col-md-2 cold-md-offset-1">
+            <figure class="col-md-2 col-md-offset-1">
                 <img src="http://placehold.it/100x100" alt="Jonathan F. Doe" class="img-responsive img-circle pull-right" />
+            </figure>
+            <blockquote class="col-md-7">
+                <p>
+                    Testimonials are important. Be sure to include some in your sales page.
+                </p>
+                <p>
+                    With Product, my sales page was <strong>online in minutes</strong>. And it rocks!.
+                </p>
+                <small>Jonathan F. Doe, CIO at Lorem Ipsum</small>
+            </blockquote>
+        </div>
+    </div>
 
+    <div class="bg-white-dark" id="free-sample">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2>Get a free sample</h2>
+                    <p class="lead">A taste of what is included with the product.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="panel panel-default">
+                        <div class="panel-body text-center">
+                            <img alt="sample" src="http://placehold.it/500x250" class="img-rounded" />
+                            <p>Describe the sample dolor sit amet and why should I want to get it adipiscint elit.</p>
+                            <p>
+                                <a href="#" class="btn btn-lg btn-default text-uppercase">
+                                    <span class="icon icon-download-alt"></span>&#32
+                                    Download the sample
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="packages">
+        <div class="row">
+            <div class="cold-md-12">
+                <h2>
+                    The Complete Package
+                    <span class="pull-right">
+                        <a class="btn btn-success btn-lg" href="#">
+                            <span class="text-uppsercase"><span class="text-white-dark">Buy now for</span> $249</span>
+                        </a>
+                    </span>
+                </h2>
+                <p class="lead">
+                    Cosby sweater cray skateboard.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="media">
+                <figure class="pull-left col-xs-12 col-md-4">
+                    <img src="http://placehold.it/300x250" alt="The Amazing Product" class="media-object img-thumbnail" />
+                </figure>
+                <div class="media-body col-xs-12 col-md-7">
+                    <h3 class="mediaheading">The best pakcage for lorem ipsumer</h3>
+                    <p>
+                        Mustache farm-to-table deep v cardigan, Banksy Godard roof party PBR&amp;B.
+                    </p>
+                    <ul>
+                        <li>Details</li>
+                        <li>Lorem ipsum</li>
+                        <li>Nostrud exercitation</li>
+                        <li>Resources ipsum</li>
+                        <li>Adipiscit resources</li>
+                        <li>Resource numquam</li>
+                        <li>Resources ipsum</li>
+                        <li>Adipiscit resource</li>
+                        <li>Resource numquam</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>
+                        The Amazing Product + Resources
+                        <span class="pull-right">
+                            <a class="btn btn-success btn-lg" href="#">
+                                <span class="text-uppercase"><span class="text-white-dark">Buy now for</span> $99</span>
+                            </a>
+                        </span>
+                    </h2>
+                    <p class="lead">
+                        Cosby sweater cray skateboard.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="media">
+                    <figure class="pull-left col-xs-12 col-md-4">
+                        <img src="http://placehold.it/300x250" alt="The Amazing Product" class="media-object img-thumbnail" />
+                    </figure>
+                    <div class="media-body col-xs-12 col-md-7">
+                        <h3 class="media-heading">Perfect for nostrud lorem</h3>
+                        <p>
+                            Mustache farm-to-table deep v cardigan, Banksy Godard roof party PBR&amp;B.
+                        </p>
+                        <ul>
+                            <li>Details</li>
+                            <li>Lorem ipsum</li>
+                            <li>Nostrud exercitation</li>
+                            <li>Resources</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>
+                    The Amazing Product
+                    <span class="pull-right">
+                        <a class="btn btn-success btn-lg" href="#">
+                            <span class="text-uppercase"><span class="text-white-dark">Buy now for</span> $39</span>
+                        </a>
+                    </span>
+                </h2>
+                <p class="lead">
+                    Cosby sweater cray skateboard.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="media">
+                <figure class="pull-left col-xs-12 col-md-4">
+                    <img src="http://placehold.it/300x250" alt="The Amazing Product" class="media-object img-humbnail" />
+                </figure>
+                <div class="media-body col-xs-12 col-md-7">
+                    <h3 class="media-heading">The Budget option</h3>
+                    <p>
+                        Mustache farm-to-table deep v cardigan, Banksy Godard roof party PBR&amp;B.
+                    </p>
+                    <p>
+                        Cliche sartorial roof party, shabby chic sustainable VHS food truck 90's four loko. Etsy hoodie     distillery, organic beard DIY cliche.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 
 
 
