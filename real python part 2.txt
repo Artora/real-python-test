@@ -38,7 +38,7 @@ started reading 6.8.2019
 22.10.2019 read until page 192 Putting it all together
 23.10.2019 read until page 196 1.12 Flask: FlaskTaskr, Part4 - Styles, Test Coverage, and Permissions
 23.10.2019 read until page 199 Custom Styles
-24.10.2019 read until page 204 Notes Testing Framework
+24.10.2019 read until page 204 Nose Testing Framework
 
 
 
