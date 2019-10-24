@@ -38,7 +38,7 @@ started reading 6.8.2019
 22.10.2019 read until page 192 Putting it all together
 23.10.2019 read until page 196 1.12 Flask: FlaskTaskr, Part4 - Styles, Test Coverage, and Permissions
 23.10.2019 read until page 199 Custom Styles
-24.10.2019 read until page 201 Test Coverage
+24.10.2019 read until page 204 Notes Testing Framework
 
 
 
@@ -298,5 +298,28 @@ https://cssvalues.com/ is an excellent resource for finding the acceptable value
 ADDITIONAL RESOURCES
 HTML and CSS https://www.codecademy.com/learn/learn-html
 More practice with CSS http://flukeout.github.io/
+
+page 201 COVERAGE
+
+$ pip install coverage==4.2
+$ pip freeze > requirements.txt
+
+$ coverage run test.py
+
+$ coverage report --omit=../env/'*'
+$ coverage html --omit=../env/'*'
+
+NOTE: If you get stuck with coverage, try calling coverage erase and starting
+over. Each time you run coverage run test.py , coverage remembers and is
+basing its calculations on the state of the test suite at that point. Changes to the
+code may make it necessary to erase coverage and start fresh.
+
+
+
+
+
+
+
+
 
 

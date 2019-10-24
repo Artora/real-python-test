@@ -5,3 +5,5 @@ __pycache__
 *.DS_Store
 project/_config.py
 env_python_3_6_0/
+.coverage
+htmlconv
