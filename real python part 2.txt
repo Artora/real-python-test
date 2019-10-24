@@ -34,7 +34,13 @@ started reading 6.8.2019
 6.10.2019 read until page 182 Users can access tasks
 9.10.2019 read until page 185 Interlude: Intro to HTML and CSS
 9.10.2019 read until page 188 Elements, Tags, and Attributes
-10.10.2019 read until page 189 CSS
+10.10.2019 read until page 190 CSS
+22.10.2019 read until page 192 Putting it all together
+23.10.2019 read until page 196 1.12 Flask: FlaskTaskr, Part4 - Styles, Test Coverage, and Permissions
+23.10.2019 read until page 199 Custom Styles
+24.10.2019 read until page 201 Test Coverage
+
+
 
 
 10 1.1 Introduction
@@ -48,7 +54,7 @@ started reading 6.8.2019
 136 1.9 Flask: FlaskTaskr, Part 2 - SQLAlchemy and User Management
 164 1.10 Flask: FlaskTaskr, Part 3 - Error Handling and Testing
 186 1.11 Interlude: Intro to HTML and CSS
-195 1.12 Flask: FlaskTaskr, Part4 - Styles, Test Coverage, and Permissions
+196 1.12 Flask: FlaskTaskr, Part4 - Styles, Test Coverage, and Permissions
 216 1.13 Flask: FlaskTaskr, Part 5 - Blueprints
 230 1.14 Flask: FlaskTaskr, Part 6 - New features and Error Handling
 252 1.15 Flask:FlaskTaskr, Part 7 - Deployment
@@ -287,5 +293,10 @@ From here you step through your code to see what happens, line by line. You have
 	b <line #> : adds a breakpoint at a specific line #
 NOTE If you don't remember the list of commands you can always type ? or help to see the entire list.
 
+https://cssvalues.com/ is an excellent resource for finding the acceptable values given a CSS property. Bookmark it!
+
+ADDITIONAL RESOURCES
+HTML and CSS https://www.codecademy.com/learn/learn-html
+More practice with CSS http://flukeout.github.io/
 
 
