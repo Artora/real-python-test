@@ -39,6 +39,7 @@ started reading 6.8.2019
 23.10.2019 read until page 196 1.12 Flask: FlaskTaskr, Part4 - Styles, Test Coverage, and Permissions
 23.10.2019 read until page 199 Custom Styles
 24.10.2019 read until page 204 Nose Testing Framework
+25.10.2019 read until page 206 Permissions
 
 
 
@@ -315,9 +316,14 @@ basing its calculations on the state of the test suite at that point. Changes to
 code may make it necessary to erase coverage and start fresh.
 
 
+PAGE 204 NOSE
 
+$ nosetests --with-coverage --cover-erase --cover-package=../project
 
-
+Let's look at the flags that we used:
+1. --with-coverage checks for test coverage.
+2. --cover-erase erases coverage results from the previous test run.
+3. --cover-package==../project specifies which portion of the code to analyze.
 
 
 
