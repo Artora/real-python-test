@@ -40,7 +40,8 @@ started reading 6.8.2019
 23.10.2019 read until page 199 Custom Styles
 24.10.2019 read until page 204 Nose Testing Framework
 25.10.2019 read until page 206 Permissions
-
+30.10.2019 read until page 209 Admin Permissions
+31.10.2019 read until page 210 Write the code
 
 
 

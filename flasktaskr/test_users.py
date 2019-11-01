@@ -85,7 +85,7 @@ class UsersTests(unittest.TestCase):
     def test_users_can_login(self):
         self.register('Michael', 'michael@realpython.com', 'python', 'python')
         response = self.login('Michael', 'python')
-        self.assertIn(b'Welcome!', response.data)
+        self.assertIn(b'Welcome', response.data)
 
     def test_invalid_form_data(self):
         self.register('Michael', 'michael@realpython.com', 'python', 'python')
@@ -173,8 +173,9 @@ class UsersTests(unittest.TestCase):
         db.session.commit()
 
         users = db.session.query(User).all()
+        print(users)
         for user in users:
-            self.assertEqual(user.role, 'user')
+            self.assertEquals(user.role, 'user')
 
 
 if __name__ == "__main__":
