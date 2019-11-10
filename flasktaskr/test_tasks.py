@@ -43,15 +43,15 @@ class TasksTests(unittest.TestCase):
     def register(self, name, email, password, confirm):
         return self.app.post(
             'register/',
-            data=dict(name=name, email=email, password=password, confirm=confirm),
+            data=dict(name=name, email=email, password=password, confirm=confirm, role='user'),
             follow_redirects=True
         )
 
     def logout(self):
         return self.app.get('logout/', follow_redirects=True)
 
-    def create_user(self, name, email, password):
-        new_user = User(name=name, email=email, password=password)
+    def create_user(self, name='Michael', email='michael@realpython.com', password='python'):
+        new_user = User(name=name, email=email, password=password, role='user')
         db.session.add(new_user)
         db.session.commit()
 
@@ -209,6 +209,34 @@ class TasksTests(unittest.TestCase):
         for task in tasks:
             self.assertEqual(task.name, 'Run around in circles')
 
+
+    def test_admin_users_can_complete_tasks_that_are_not_created_by_them(self):
+        self.create_user()
+        self.login('Michael', 'python')
+        self.app.get('tasks/', follow_redirects=True)
+        self.create_task()
+        self.logout()
+        self.create_admin_user()
+        self.login('Superman', 'allpowerful')
+        self.app.get('tasks/', follow_redirects=True)
+        response = self.app.get("complete/1/", follow_redirects=True)
+        self.assertNotIn(
+            'You can only update tasks that belong to you.', response.data
+        )
+
+    def test_admin_users_can_delete_tasks_that_are_not_created_by_them(self):
+        self.create_user()
+        self.login('Michael', 'python')
+        self.app.get('tasks/', follow_redirects=True)
+        self.create_task()
+        self.logout()
+        self.create_admin_user()
+        self.login('Superman', 'allpowerful')
+        self.app.get('tasks/', follow_redirects=True)
+        response = self.app.get("delete/1/", follow_redirects=True)
+        self.assertNotIn(
+            'You can only delete tasks that belong to you.', response.data
+        )
 
 if __name__ == "__main__":
     unittest.main()

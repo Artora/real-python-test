@@ -42,6 +42,8 @@ started reading 6.8.2019
 25.10.2019 read until page 206 Permissions
 30.10.2019 read until page 209 Admin Permissions
 31.10.2019 read until page 210 Write the code
+10.11.2019 read until page 216 1.13 Flask: FlaskTaskr, Part 5 - Blueprints
+
 
 
 
