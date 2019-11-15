@@ -45,6 +45,7 @@ started reading 6.8.2019
 10.11.2019 read until page 216 1.13 Flask: FlaskTaskr, Part 5 - Blueprints
 13.11.2019 read until page 224 Step 3: Creating the Blueprints
 14.11.2019 read until page 225 Step 4: Updating the main app
+15.11.2019 read until page 230 Flask: FlaskTaskr, Part 6 - New Features and Error Handling
 
 
 
@@ -328,6 +329,15 @@ Let's look at the flags that we used:
 1. --with-coverage checks for test coverage.
 2. --cover-erase erases coverage results from the previous test run.
 3. --cover-package==../project specifies which portion of the code to analyze.
+
+
+PAGE 227
+removing old virtual environment and creating a new one
+$ deactivate
+$ rm -rf env/
+$ python3 -m venv env
+$ source env/Scripts/activate
+$ pip install -r requirements.txt
 
 
 

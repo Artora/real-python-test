@@ -1,9 +1,9 @@
 # project/__init__.py
 
-from flask import flask
-from flask_sqlalchemy import sqlalchemy
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
 
-app = Flask(__name_)
+app = Flask(__name__)
 app.config.from_pyfile('_config.py')
 db =SQLAlchemy(app)
 
