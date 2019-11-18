@@ -1,3 +1,6 @@
+# project/tasks/views.py
+
+
 import datetime
 from functools import wraps
 from flask import flash, redirect, render_template, \
@@ -51,7 +54,8 @@ def tasks():
         'tasks.html',
         form=AddTaskForm(request.form),
         open_tasks=open_tasks(),
-        closed_tasks=closed_tasks()
+        closed_tasks=closed_tasks(),
+        username=session['name']
     )
 
 
