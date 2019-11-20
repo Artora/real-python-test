@@ -48,6 +48,10 @@ started reading 6.8.2019
 15.11.2019 read until page 230 Flask: FlaskTaskr, Part 6 - New Features and Error Handling
 18.11.2019 read until page 234 Display, Update and Delete links
 19.11.2019 read until page 238 Password Hashing
+20.11.2019 read until page 242 Custom Error Pages
+
+
+
 
 
 10 1.1 Introduction
