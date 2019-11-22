@@ -49,7 +49,7 @@ started reading 6.8.2019
 18.11.2019 read until page 234 Display, Update and Delete links
 19.11.2019 read until page 238 Password Hashing
 20.11.2019 read until page 242 Custom Error Pages
-21.11.2019 read until page 246 Error Handler 500
+21.11.2019 read until page 248 Update Debug Mode
 
 
 
