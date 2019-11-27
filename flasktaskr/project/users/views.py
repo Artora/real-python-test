@@ -81,8 +81,8 @@ def register():
             new_user = User(
                 form.name.data,
                 form.email.data,
-                form.password.data,
-                #Bcrypt().generate_password_hash(form.password.data, 10).decode('utf-8')
+                # form.password.data,
+                Bcrypt().generate_password_hash(form.password.data, 10).decode('utf-8')
             )
             try:
                 db.session.add(new_user)
