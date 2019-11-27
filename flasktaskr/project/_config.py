@@ -10,7 +10,7 @@ DATABASE = 'flasktaskr.db'
 WTF_CSRF_ENABLED = True
 SECRET_KEY = os.urandom(24)
 
-DEBUG = True
+DEBUG = False
 
 # define the full path for the database
 DATABASE_PATH = os.path.join(basedir, DATABASE)
