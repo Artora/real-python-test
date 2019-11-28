@@ -51,6 +51,7 @@ started reading 6.8.2019
 20.11.2019 read until page 242 Custom Error Pages
 21.11.2019 read until page 248 Update Debug Mode
 27.11.2019 read until page 252 Flask: FlaskTaskr, Part 7 - Deployment
+28.11.2019 read until page 255 Deploy
 
 
 
@@ -347,8 +348,41 @@ $ pip install -r requirements.txt
 
 HEROKU
 
+heroku path:
+/C/Users/artomatti.ratilainen/Desktop/omat\ tiedostot/heroku/bin/heroku
+
 to login copy paste in git bash:
 /C/Users/artomatti.ratilainen/Desktop/omat\ tiedostot/heroku/bin/heroku login
+
+create app on Heroku
+$ heroku create
+
+confirm the heroku exists on git
+$ git remote -v
+
+if not:
+	look the name of the heroku when creating app, for example:
+	vast-everglades-38773
+
+	create  the heroku git:
+	$ heroku git:remote -a thawing-inlet-61413
+
+Deploy your code to Heroku:
+$ git push heroku master
+
+Add a PostgreSQL database:
+$ heroku addons:create heroku-postgresql:dev
+
+Check to make sure your app is running:
+$ heroku ps
+
+View the app in your browser:
+$ heroku open
+
+If you see errors, open the Heroku log to view all errors and output:
+$ heroku logs
+
+
 
 
 
