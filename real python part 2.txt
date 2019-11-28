@@ -345,6 +345,11 @@ $ source env/Scripts/activate
 $ pip install -r requirements.txt
 
 
+HEROKU
+
+to login copy paste in git bash:
+/C/Users/artomatti.ratilainen/Desktop/omat\ tiedostot/heroku/bin/heroku login
+
 
 
 
