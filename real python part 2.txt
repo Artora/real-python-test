@@ -364,7 +364,7 @@ $ git remote -v
 
 if not:
 	look the name of the heroku when creating app, for example:
-	vast-everglades-38773
+	hidden-sands-78899
 
 	create  the heroku git:
 	$ heroku git:remote -a thawing-inlet-61413
