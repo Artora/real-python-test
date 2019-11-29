@@ -52,6 +52,8 @@ started reading 6.8.2019
 21.11.2019 read until page 248 Update Debug Mode
 27.11.2019 read until page 252 Flask: FlaskTaskr, Part 7 - Deployment
 28.11.2019 read until page 255 Deploy
+29.11.2019 read until page 262 Flask: FlaskTaskr, Part 8 = RESTful API
+
 
 
 
@@ -368,10 +370,14 @@ if not:
 	$ heroku git:remote -a thawing-inlet-61413
 
 Deploy your code to Heroku:
-$ git push heroku master
+	- to deploy the entire repo:
+	$ git push heroku master
+
+	to deploy a subfolder of a repo:
+	$ git subtree push --prefix flasktaskr heroku master
 
 Add a PostgreSQL database:
-$ heroku addons:create heroku-postgresql:dev
+$ heroku addons:create heroku-postgresql:hobby-dev
 
 Check to make sure your app is running:
 $ heroku ps
@@ -384,6 +390,11 @@ $ heroku logs
 
 Push only flasktaskr folder to heroku:
 $ git subtree push --prefix flasktaskr heroku master
+
+Run nosetests:
+$ heroku run nosetests
+$ heroku logs --app hidden-sands-78899 --dyno run.2030
+
 
 
 
