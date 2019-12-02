@@ -53,6 +53,7 @@ started reading 6.8.2019
 27.11.2019 read until page 252 Flask: FlaskTaskr, Part 7 - Deployment
 28.11.2019 read until page 255 Deploy
 29.11.2019 read until page 262 Flask: FlaskTaskr, Part 8 = RESTful API
+2.12.2019 read until page 266 Code
 
 
 
@@ -394,6 +395,25 @@ $ git subtree push --prefix flasktaskr heroku master
 Run nosetests:
 $ heroku run nosetests
 $ heroku logs --app hidden-sands-78899 --dyno run.2030
+
+
+	RESTful API
+	page 264
+Put simply, an API is collection of functions that other programs can use to access or
+manipulate data from a determine database. Each function has an associated endpoint
+(also called a resource). One can make changes to a resource via the HTTP
+methods/verbs:
+1. GET - view a resource
+2. POST - create a new resource
+3. PUT - update a resource
+4. DELETE - delete a resource
+
+
+
+
+
+
+
 
 
 
