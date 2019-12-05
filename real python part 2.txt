@@ -54,7 +54,7 @@ started reading 6.8.2019
 28.11.2019 read until page 255 Deploy
 29.11.2019 read until page 262 Flask: FlaskTaskr, Part 8 = RESTful API
 2.12.2019 read until page 266 Code
-5.12.2019 read until page 272 Deploy
+5.12.2019 read until page 273 Interlude: Flask BoilerPlate Template and Workflow
 
 
 
