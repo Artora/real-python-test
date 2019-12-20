@@ -55,9 +55,10 @@ started reading 6.8.2019
 29.11.2019 read until page 262 Flask: FlaskTaskr, Part 8 = RESTful API
 2.12.2019 read until page 266 Code
 5.12.2019 read until page 273 Interlude: Flask BoilerPlate Template and Workflow
+12.12.2019 read until page 277 Flask: FlaskTaskr, Part 9: Continuous Integration and Delivery
 
-
-
+# 19.12.2019 BOOK 3: read until page 94: Issue a pull request to merge your feature branch back to master
+# 20.12.2019 BOOK 3: read until page 97: Exercises
 
 10 1.1 Introduction
 16 1.2 Getting Started
@@ -410,9 +411,63 @@ methods/verbs:
 4. DELETE - delete a resource
 
 
+book 3 page 87
+Also to make git-flow even easier to use, Vincent has created an open source tool called
+git-flow that is a collection of scripts that make using this branching model pretty straightforward,
+which can save a lot of keystrokes. Git-Flow can be found on Github here.
+Thank you Vincent!
 
 
+book 3 page 91
+	Write your code and tests on the feature branch
+	All work should be done on a feature branch to keep it separate from Master and to allow
+	each to go through a code review before being merged back into master.
+	Create the branch by simply typing:
+	1 $ git checkout -b feature_branch_name
 
+
+	Start with the following command:
+	1 $ git rebase -i origin/master
+	NOTE: the -i flag is optional but that gives you an interactive menu where you
+	can reorder commits, squash them or fix them
+
+
+http://pcottle.github.io/learnGitBranching/
+	GIT COMMANDS
+git commit # makes a new commit
+git branch <branch-name> # creates new branch
+git checkout <branch-name> # changes to another branch
+	git checkout -b <branch-name> # creates new branch and changes to it
+
+git merge <branch-to-merge-in> < # combines another branch in current branch
+
+		REBASING
+git rebase <base-branch> # rebases current branch into base branch
+git checkout master
+git rebase <head-feature-branch>
+
+# head = currently checked out commit
+# git log - shows commit hashes - commit hashes be used to checkout to individual commits
+
+# git checkout ^ # moves up one commit
+# git checkout ~<num> # moves up x commits
+
+# git checkout master^ # moves to the first parent of master
+# git checkout master^^ moves to the grandparent of master
+
+# git branch -f master HEAD~3 # moves (by force) the master branch to three parents behind HEAD.
+
+		REVERTING CHANGES IN Git
+git reset # reverts changes back in time as if commits never happened, for example 
+	git reset HEAD~1
+git revert # makes a new commit that reverses changes instead of deleting the commit(s) entirely - good when commits are shared online instead of locally on own pc - for example: 
+	git revert HEAD
+
+		MOVING WORK AROUND
+git cherry-pick <commit1> <commit2> <..> # copies a series of commits to current location (HEAD)
+
+
+done MAIN Introduction Sequence and Ramping Update
 
 
 
