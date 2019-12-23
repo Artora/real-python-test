@@ -467,8 +467,79 @@ git revert # makes a new commit that reverses changes instead of deleting the co
 git cherry-pick <commit1> <commit2> <..> # copies a series of commits to current location (HEAD)
 
 
-done MAIN Introduction Sequence and Ramping Update
+		CHERRY PICKING
 
+git cherry-pick <commit1> <commit2> <...> # copy a series of commits below your current location (head)
+
+rebase -i # interactive, shows commits and their hashes and messages
+	can do 3 things:
+		- reorder commits
+		- omit commits (turn pick off)
+		- squash commits (= combine commits)
+
+		MAKE MODIFICATIONS TO EARLIER COMMITS
+git rebase -i # bring the earlier commit as the latest commit
+commit --amend # make modifications to the commit
+git rebase -i # re-order the commit back to its original position
+
+git tag <tag-name> <commit> # tags a commit
+
+git describe <ref> # tells where you are relative to the closest tag
+
+
+		SPECIFYING PARENTS
+^ also accepts an optional number after it
+	^ modifier specifies which parent reference to follow from a merge commit
+^ and ~ modifiers can be changed, for example:
+	git checkout HEAD~^2~2
+
+
+	REMOTE REPOSITORIES
+		INTRO
+git clone # creates local copy of remote repository
+# remote branches are displayed with format <remote name>/<branch name>
+# most developers name their main remote as origin
+
+		GIT FETCH
+git fetch # fetches data from a remote repository
+	# git fetch does not update your local master branch or other local branches - it does not change any of your local files!
+
+
+		GIT PULL
+once you have new commits available locally, you can incorporate them as if they were just normal commits on other branches. This means you could execute commands like:
+
+git cherry-pick o/master
+git rebase o/master
+git merge o/master
+etc., etc.
+In fact, the workflow of fetching remote changes and then merging them is so common that git actually provides a command that does both at once! That command is git pull.
+
+		GIT PUSH
+git push <remote> <place> # uploads local commits to remote
+	# you can only push to remote if your local copy of remote is the same as the remote!
+	# if remote has been modified, you have to incorporate the changes on the remote on your local work!
+
+git pull --rebase # fetches and rebases changes from remote
+
+
+		REMOTE TRACKING
+git checkout -b totallyNotMaster origin/master # creates a local branch totallyNotmaster which tracks remote branch master
+
+git branch -u origin/master foo # sets foo branch to track origin/master
+
+
+		PUSH ARGUMENTS
+git push <remote> <place>
+	# git push origin master
+
+In order to specify both the source and the destination of <place>, simply join the two together with a colon:
+	git push origin <source>:<destination>
+
+		GIT FETCH ARGUMENTS
+
+		SOURCE
+git push origin :foo # deletes foo branch on remote
+git fetch origin :bar # creates an empty branch called bar
 
 
 
