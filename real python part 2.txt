@@ -585,12 +585,31 @@ git fetch origin :bar # creates an empty branch called bar
 #### Travis CI ####
 ###################
 
+Step 1: Sign up: https://travis-ci.org/
 Settings up Travis CI:
 - add repository to Travis at:
  https://travis-ci.org/ (open source projects, public repository
  https://travis-ci.com/ (private repositories)
  
+Step 2: Add a Config File
 - add a file called .travis.yml
+ 
+ Step 3: Trigger a New Build
+- commit code locally, push to github
+	- a new build will be added to Travis CI queue and it will be ran after a while (can take a few minutes)
+- put the status into a README.md file (instructions can be found at https://docs.travis-ci.com/user/status-images/ )
+
+Step 4: Travis Command Line Client
+- Windows: RubyInstaller http://rubyinstaller.org/
+- run the following command to install travis:
+$ gem install travis
+
+- Now, within your project directory, run the following command:
+$ travis setup heroku
+
+- Answer 'yes' to all the prompts.
+This
+
 
 
 
