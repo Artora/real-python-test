@@ -15,9 +15,8 @@ install:
 
 # run tests
 script:
-  -nosetests
+  - nosetests
 
 TRAVIS_BUILD_DIR:
   flasktaskr/
 
-  
