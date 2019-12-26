@@ -57,8 +57,20 @@ started reading 6.8.2019
 5.12.2019 read until page 273 Interlude: Flask BoilerPlate Template and Workflow
 12.12.2019 read until page 277 Flask: FlaskTaskr, Part 9: Continuous Integration and Delivery
 
+################
+#### Book 3 ####
+################
 # 19.12.2019 BOOK 3: read until page 94: Issue a pull request to merge your feature branch back to master
 # 20.12.2019 BOOK 3: read until page 97: Exercises
+# 24.12.2019 BOOK 3: finished Chapter 5: Git Branching at a Glance
+
+#########################
+#### Book 2 continue ####
+#########################
+
+25.12.2019 read until page 281 Step 2: Add a Config File
+
+
 
 10 1.1 Introduction
 16 1.2 Getting Started
@@ -106,7 +118,9 @@ github.com/realpython/book2-exercises
 SUPPORT
 github.com/realpython/support
 
-CMD COMMANDS
+######################
+#### CMD COMMANDS ####
+######################
 
 cd - navigating to folders
 cd .. - going back one folder
@@ -118,7 +132,9 @@ rd - remove a folder
 echo file_content > file_name - create new file
 
 
-INSTALLING SQLITE
+###########################
+#### INSTALLING SQLITE ####
+###########################
 
 VIRTUAL ENVIRONMENT
 
@@ -154,7 +170,9 @@ VERSION CONTROL
 
 We will be using Git for version control and Github for remotely hosting our code.
 
-SETTING UP Git
+########################
+#### SETTING UP Git ####
+########################
 
 git-scm.com/downloads/
 
@@ -205,8 +223,9 @@ eepurl.com/xnT3b
 Want to learn more about MVC? Read Model-View-Controller (MVC) Explained -- With Legos
 realpython.com/blog/python/the-model-view-controller-mvc-paradigm-summarized-with-legos/
 
-
-1.4 FLASK: QUICK START
+################################
+#### 1.4 FLASK: QUICK START ####
+################################
 
 Save the file as app.py and run it:
 $ python app.py
@@ -215,8 +234,9 @@ open http://127.0.0.1:5000/ in browser to see the webpage
 http://127.0.0.1:5000/
 http://localhost:5000
 
-
-1.5 INTERLUDE: DATABASE PROGRAMMING
+#############################################
+#### 1.5 INTERLUDE: DATABASE PROGRAMMING ####
+#############################################
 SQL AND SQLite BASICS
 
 The 4 basic SQL commands:
@@ -227,7 +247,10 @@ DELETE - deletes data from the database
 
 
 
-##########################
+#############
+#### Git ####
+#############
+
 WHEN STARTING AGAIN AFTER STARTING PC, DO THE FOLLOWING:
 
 # 1. OPEN GIT BASH
@@ -254,7 +277,9 @@ $ git push origin master
 # To change the drive in Windows cmd
 cd /d D:\Sync\python\real-python-test\debugging
 
-SQL Summary
+#####################
+#### SQL Summary ####
+#####################
 
 Basic SQL syntax...
 
@@ -279,7 +304,9 @@ http://zetcode.com/
 http://www.tutorialspoint.com/python/python_database_access.htm
 
 
-1.5 FLASK BLOG APP
+############################
+#### 1.5 FLASK BLOG APP ####
+############################
 
 start server by running:
 python blog.py (chnage filename to what you want to run)
@@ -296,8 +323,9 @@ on your own. Or you can use your OS to get a random string:
 Now you can simply assign that string to the secret key: SECRET_KEY =
 rM\xb1\xdc\x12o\xd6i\xff+9$T\x8e\xec\x00\x13\x82.*\x16TG\xbd
 
-
-1.7 Interlude: Debugging in Python
+############################################
+#### 1.7 Interlude: Debugging in Python ####
+############################################
 
 pdb module
 
@@ -316,7 +344,9 @@ ADDITIONAL RESOURCES
 HTML and CSS https://www.codecademy.com/learn/learn-html
 More practice with CSS http://flukeout.github.io/
 
-page 201 COVERAGE
+###########################
+#### page 201 COVERAGE ####
+###########################
 
 $ pip install coverage==4.2
 $ pip freeze > requirements.txt
@@ -332,7 +362,9 @@ basing its calculations on the state of the test suite at that point. Changes to
 code may make it necessary to erase coverage and start fresh.
 
 
-PAGE 204 NOSE
+#######################
+#### PAGE 204 NOSE ####
+#######################
 
 $ nosetests --with-coverage --cover-erase --cover-package=../project
 
@@ -351,7 +383,9 @@ $ source env/Scripts/activate
 $ pip install -r requirements.txt
 
 
-HEROKU
+################
+#### HEROKU ####
+################
 
 heroku path:
 /C/Users/artomatti.ratilainen/Desktop/omat\ tiedostot/heroku/bin/heroku
@@ -398,8 +432,9 @@ Run nosetests:
 $ heroku run nosetests
 $ heroku logs --app hidden-sands-78899 --dyno run.2030
 
-
-	RESTful API
+#####################
+#### RESTful API ####
+#####################
 	page 264
 Put simply, an API is collection of functions that other programs can use to access or
 manipulate data from a determine database. Each function has an associated endpoint
@@ -431,6 +466,10 @@ book 3 page 91
 	NOTE: the -i flag is optional but that gives you an interactive menu where you
 	can reorder commits, squash them or fix them
 
+
+#########################
+##### Git Branching #####
+#########################
 
 http://pcottle.github.io/learnGitBranching/
 	GIT COMMANDS
@@ -540,6 +579,18 @@ In order to specify both the source and the destination of <place>, simply join 
 		SOURCE
 git push origin :foo # deletes foo branch on remote
 git fetch origin :bar # creates an empty branch called bar
+
+
+###################
+#### Travis CI ####
+###################
+
+Settings up Travis CI:
+- add repository to Travis at:
+ https://travis-ci.org/ (open source projects, public repository
+ https://travis-ci.com/ (private repositories)
+ 
+- add a file called .travis.yml
 
 
 
