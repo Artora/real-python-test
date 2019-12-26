@@ -17,3 +17,7 @@ install:
 script:
   -nosetests
 
+TRAVIS_BUILD_DIR:
+  flasktaskr/
+
+  
