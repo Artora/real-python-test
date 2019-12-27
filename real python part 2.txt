@@ -618,6 +618,27 @@ This
 - make sure the app is running on Heroku after the push is complete
 
 
+########################
+#### Testing Branch ####
+########################
+
+page 287
+
+# creating a new branch called unit-tests based on the code in the current master branch
+$ git checkout -b unit-tests master
+
+# git branch - tells you which branch you are currently working on
+
+
+
+
+
+
+
+
+
+
+
 
 
 
