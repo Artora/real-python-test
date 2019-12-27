@@ -69,6 +69,8 @@ started reading 6.8.2019
 #########################
 
 25.12.2019 read until page 281 Step 2: Add a Config File
+26.12.2019 read until page 285 Intermission
+
 
 
 
@@ -609,6 +611,11 @@ $ travis setup heroku
 
 - Answer 'yes' to all the prompts.
 This
+
+- commit changes
+- push to github
+- build should pass Travis CI and automatically push the new code to Heroku
+- make sure the app is running on Heroku after the push is complete
 
 
 

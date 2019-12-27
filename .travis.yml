@@ -1,17 +1,33 @@
+# .travis.yml
+
+# specify language
 language:
 - python
+
+# specify python version(s)
 python:
 - '3.6'
 - '3.7'
+
+# install dependencies
 install:
 - pip install -r requirements.txt
+
+# run tests
 script:
 - nosetests
+
+# subfolder location of the project
 TRAVIS_BUILD_DIR: flasktaskr/
+
+# deploy!
 deploy:
   provider: heroku
   api_key:
     secure: dkUw0AH5BUvGMm3cCVatiP6DYwnVFWO6ecLM5fU6QtKsbEnyuY71zeehREmgcgA3DkFicR7Dp4qlc7EOPralQJporlbMD0vqLSG4SIGYHUliA4xhsNXWaPxZhL3YpP+sZqatkuFAfKqFne1yPqqEAiMFBBhuUE0UbUgANr0DN5RmTh8FHzf5JJFzdOlGnYBEgqZPQl6R25StT4nI6eiNfq8cZ6LmdMGN1z9xH7z3eHyU5M7i9DuvO+jJ7h178GeJQ0dn8xVA7VwXQjZg0uieMgPN3pWzs/vbf25w/Gybe/NgOolTY9nxVoClUJMtp1oigCbLWN5mlxmDOfVmFxH+zppwVDHxtbyu1B0fDP8doyw+TorQY1F12bTGRrT3uXOvOQ60gddza8GOIIMH9yfCHcbsK0nOrnSfj9MHLtmJx9W/4bFa48fnzI3Z9zqCPS2QrJUeMDhu8YKvXoN7b44zPb6J+mGL27JHYv88ap2I6h0AFbriAp+yvC8BMJ7Yk4a/XsJvaMcIvhBDkA5cp/wzDwGSwFryckTwE2t6FZuiahYgnZy39h8cD5f9E+Km8DSdxnibFQlcDtjWF3zW42JU2SYE6gMy5o3mP/DTUJ7Qk5vpFpDQMq2bi7SOEqBNNMwZaKRkadSDJPNY5Ts1yv/HvFNOvGkqmNGEfmnjo2xBmko=
-  app: real-python-test
+  app: FlaskTaskr
   on:
+    branch: master
+    python: '3.6'
     repo: Artora/real-python-test
+
