@@ -70,7 +70,7 @@ started reading 6.8.2019
 
 25.12.2019 read until page 281 Step 2: Add a Config File
 26.12.2019 read until page 285 Intermission
-
+27.12.2019 read until page 288 Create a Pull Request
 
 
 
