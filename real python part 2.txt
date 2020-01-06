@@ -60,6 +60,11 @@ started reading 6.8.2019
 # 19.12.2019 BOOK 3: read until page 94: Issue a pull request to merge your feature branch back to master
 # 20.12.2019 BOOK 3: read until page 97: Exercises
 
+
+
+
+
+
 10 1.1 Introduction
 16 1.2 Getting Started
 33 1.3 Interlude: Modern Web Development
