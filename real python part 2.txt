@@ -70,7 +70,7 @@ started reading 6.8.2019
 
 25.12.2019 read until page 281 Step 2: Add a Config File
 26.12.2019 read until page 285 Intermission
-
+27.12.2019 read until page 288 Create a Pull Request
 
 
 
@@ -623,6 +623,7 @@ This
 - make sure the app is running on Heroku after the push is complete
 
 
+
 				#############################
 				#### gthub pull requests ####
 				#############################
@@ -645,6 +646,20 @@ Creating the pull request
 	5. Type a title and description for your pull request.
 
 	6. To create a pull request that is ready for review, click Create Pull Request. To create a draft pull request, use the drop-down and select Create Draft Pull Request, then click Draft Pull Request. For more information about draft pull requests, see "About pull requests."
+=======
+########################
+#### Testing Branch ####
+########################
+
+page 287
+
+# creating a new branch called unit-tests based on the code in the current master branch
+$ git checkout -b unit-tests master
+
+# git branch - tells you which branch you are currently working on
+
+
+
 
 
 
