@@ -72,9 +72,11 @@ started reading 6.8.2019
 26.12.2019 read until page 285 Intermission
 27.12.2019 read until page 288 Create a Pull Request
 
+6.2.2020 read until page 289 Fabric
+7.2.2020 read until page 293 Flask: Behavior-Driven Development with Behave
 
-
-
+14.2.2020 read until page 297 Project Setup
+7.7.2020 read until page 298 Introduction to Behave
 
 
 
@@ -265,7 +267,7 @@ WHEN STARTING AGAIN AFTER STARTING PC, DO THE FOLLOWING:
 # 2. NAVIGATE TO FOLDER
 $ cd /D/Sync/python/real-python-test/
 
-$ cd Desktop/omat\ tiedostot/python/real\ python/book\ 2/real-python-test/flasktaskr/
+$ cd Desktop/omat\ tiedostot/python/real\ python/book\ 2/real-python-test/flask-bdd
 
 
 # 3. ACTIVATE VIRTUAL ENVIRONMENT
@@ -625,7 +627,7 @@ This
 
 
 				#############################
-				#### gthub pull requests ####
+				#### github pull requests ####
 				#############################
 https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
 base branch:
@@ -646,7 +648,8 @@ Creating the pull request
 	5. Type a title and description for your pull request.
 
 	6. To create a pull request that is ready for review, click Create Pull Request. To create a draft pull request, use the drop-down and select Create Draft Pull Request, then click Draft Pull Request. For more information about draft pull requests, see "About pull requests."
-=======
+
+
 ########################
 #### Testing Branch ####
 ########################
@@ -657,6 +660,7 @@ page 287
 $ git checkout -b unit-tests master
 
 # git branch - tells you which branch you are currently working on
+
 
 
 
